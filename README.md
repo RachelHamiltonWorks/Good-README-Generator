@@ -1,69 +1,99 @@
-# Unit 10: Object Oriented Programming and TDD
+# Unit 09 Node.js and ES6+ Homework: Good README Generator
 
-## Overview
+Create a command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command:
 
-In this unit, we will discuss JavaScript's brand of OOP by introducing constructors and the prototype chain. Constructors are special functions that are extremely useful in creating objects of similar types. Prototypes are JavaScript’s built in system, allowing objects to inherit features from other objects. Prototypes are considered by many to be an advanced JavaScript topic and mastering it will be sure to give you an extra edge as a JavaScript developer.
+```sh
+node index.js
+```
 
-We will cover test driven-development (TDD). When practicing TDD, we first write tests for application features before writing any code. Then, we write only the minimum amount of code needed to make the tests pass and repeat this process until the application is complete. Test-driven development has numerous benefits but ultimately helps us write more understandable and maintainable code.
+The user will be prompted for their GitHub username and other information pertaining to the project the README is for.
 
-We will conclude this unit with an introduction to modern class syntax and inheritance. ES6 introduced a `class` keyword which allows us to create objects using class structures similar to those found in other OOP programming languages. Under the hood, classes are just constructor functions with more intuitive syntax. They allow us to implement more advanced OOP patterns such as inheritance without needing to understand all of the nuances of JavaScript's prototypal inheritance system.
+The README will be populated with the following:
 
-## Key Topics
+* At least one badge
+* Project title
+* Description
+* Table of Contents
+* Installation
+* Usage
+* License
+* Contributing
+* Tests
+* Questions
+  * User GitHub profile picture
+  * User GitHub email
 
-* Objects
+Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
 
-* this
+```
+AS A developer
 
-* Callbacks
+I WANT a README generator
 
-* Constructors
+SO THAT I can easily put together a good README for a new project
+```
 
-* Prototypes
+Refer to the [Good README guide](../../01-HTML-Git-CSS/04-Supplemental/Good-README-Guide/README.md).
 
-* TDD
+## Business Context
 
-* Unit Tests
+When creating an open source project on GitHub, it is important to have a quality README with information about the app--what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. A command-line application will allow for quick and easy generation of a project README to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.
 
-* Classes
+## Minimum Requirements
 
-* Inheritance
+* Functional, deployed application.
 
-## Comprehension Check
+* GitHub repository with a unique name and a README describing project.
 
-You will be employer-ready if you can answer the following questions:
+* The generated README includes the following sections: 
+  * Title
+  * Description
+  * Table of Contents
+  * Installation
+  * Usage
+  * License
+  * Contributing
+  * Tests
+  * Questions
 
-1. What is a constructor function and how would you use one?
+* The generated README includes 1 badge that's specific to the repository.
 
-2. What is the difference between classical inheritance and prototypal inheritance?
+```
+GIVEN the developer has a GitHub profile and a repository
 
-3. What are some benefits of test-driven development?
+WHEN prompted for the developer's GitHub username and repo specific information
 
-## Learning Objectives
+THEN a README for the repo is generated
+```
+- - -
 
-You will be employer-competitive if you are able to:
+## Commit Early and Often
 
-* Integrate constructor functions into your applications, adding structure to your code and reducing the amount of code you have to write.
+One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
 
-* Build entire applications using OOP, separating data and functionality into different constructor functions that can be composed together.
+* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-* Verify your code works as intended through the use of automated tests.
+* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
 
-* Build applications using test-driven-development, writing tests before implementing functionality.
+Follow these guidelines for committing:
 
-* Utilize modern ES6 class syntax to implement more advanced OOP patterns such as inheritance.
+* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
 
-* Create more scalable applications that follow the OOP paradigm.
+* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
 
-## Homework: Word Guess With Constructors
+* Don't commit half-done work, for the sake of your collaborators (and your future self!).
 
-* In this unit's assignment, you will create a Word Guess command-line game using constructor functions.
+* Test your application before you commit to ensure functionality at every step in the development process.
 
-## Helpful Links
+We would like you to have more than 200 commits by graduation, so commit early and often!
 
-* [Constructor Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor)
+## Submission on BCS
 
-* [Prototype Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
+You are required to submit the following:
 
-* [Class Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+* A video demonstrating the entirety of the app's functionality 
 
-* [Jest Docs](https://jestjs.io/)
+* A generated README.md file for a project repo.
+
+* The URL of the GitHub repository
+
